@@ -1,3 +1,18 @@
+## Contact form email setup
+
+This project can send Contact form submissions via Resend.
+
+1. Create a `.env.local` in the project root with:
+
+```
+RESEND_API_KEY=your_resend_api_key
+CONTACT_TO_EMAIL=your_destination_email@example.com
+```
+
+2. Restart the dev server. Submissions will be emailed to `CONTACT_TO_EMAIL` from `onboarding@resend.dev`.
+
+Note: You can customize the `from` domain in `src/app/api/contact/route.ts` if you have a verified domain.
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
