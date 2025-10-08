@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-
+ 
 export function Contact() {
   const [sent, setSent] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -30,7 +30,7 @@ export function Contact() {
             if (!res.ok) throw new Error("Request failed");
             setSent(true);
             form.reset();
-          } catch (err) {
+          } catch (_err) {
             setError("Failed to send. Please try again later.");
           } finally {
             setLoading(false);
@@ -59,5 +59,3 @@ export function Contact() {
     </section>
   );
 }
-
-

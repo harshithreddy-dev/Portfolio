@@ -18,15 +18,12 @@ export async function POST(request: Request) {
       from: "Portfolio <onboarding@resend.dev>",
       to: ["harshithreddyi1289@gmail.com"],
       subject: `New contact from ${name}`,
-      reply_to: email,
+      replyTo: email,
       text: `Name: ${name}\nEmail: ${email}\n\n${message}`,
     });
 
     return NextResponse.json({ ok: true });
-  } catch (error) {
+  } catch (_error) {
     return NextResponse.json({ error: "Failed to send" }, { status: 500 });
   }
 }
-
-
-

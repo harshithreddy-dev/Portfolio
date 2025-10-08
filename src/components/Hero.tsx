@@ -23,7 +23,7 @@ export function Hero() {
               transition={{ delay: 0.1, duration: 0.6 }}
               className="mt-4 max-w-prose text-base text-white/80"
             >
-              "Building cool stuff 💻 | Hustling hard 💪 | Living limitless ✨"
+              “Building cool stuff 💻 | Hustling hard 💪 | Living limitless ✨”
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -60,5 +60,3 @@ export function Hero() {
     </section>
   );
 }
-
-

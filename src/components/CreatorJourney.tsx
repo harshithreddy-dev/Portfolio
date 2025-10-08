@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import { FaCalendarAlt, FaVideo, FaUsers, FaDumbbell } from "react-icons/fa";
+import { FaVideo, FaUsers, FaDumbbell } from "react-icons/fa";
 
 const highlights = [
   {
