@@ -30,7 +30,7 @@ export function Contact() {
             if (!res.ok) throw new Error("Request failed");
             setSent(true);
             form.reset();
-          } catch (_err) {
+          } catch (err) {
             setError("Failed to send. Please try again later.");
           } finally {
             setLoading(false);
