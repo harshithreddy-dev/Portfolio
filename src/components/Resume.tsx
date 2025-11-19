@@ -5,7 +5,7 @@ export function Resume() {
         <h2 className="text-3xl font-bold" style={{ fontFamily: "var(--font-heading)" }}>Resume</h2>
         <p className="mt-3 text-white/80">Download my latest resume for details on my experience and skills.</p>
         <a
-          href="/harshith.pdf"
+          href="/I_Harshith_Reddy.pdf"
           className="mt-5 inline-block rounded-full bg-accent-yellow px-6 py-3 font-medium text-black hover:brightness-95 transition"
           download
         >
